@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main(void)
 {
-    int a,b,c,d,sum;
-    double average;
-    printf("Please Enter 4number:\n");
-    scanf("%d%d%d%d",&a,&b,&c,&d);
-    sum=a+b+c+d;
-    average=(a+b+c+d)/4;
-    printf("sum=%d average=%.1f\n",sum,average);
+    float n,cost;
+    printf("Enter n:");
+    scanf("%f",&n);
+    if(n<50)
+    cost=n*0.53;
+    if (n>50)
+    cost=0.53*50+(n-50)*0.58;
+    printf("%f",cost);
     return 0;
 }
